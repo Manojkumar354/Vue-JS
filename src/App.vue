@@ -1,20 +1,23 @@
 <template>
 
 <HomeComponent/>
-<BodyComponent/>
+<!-- <BodyComponent/> -->
+ <EventComponent></EventComponent>
 
 </template>
 
 <script>
 
+import EventComponent from './components/EventComponent.vue';
 import HomeComponent from './components/HomeComponent.vue';
-import BodyComponent from './components/BodyComponent.vue';
+// import BodyComponent from './components/BodyComponent.vue';
 
 export default {
     name: 'App',
     components: {
         HomeComponent,
-        BodyComponent
+        EventComponent,
+        // BodyComponent
     }
 }
 </script>
