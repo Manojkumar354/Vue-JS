@@ -1,17 +1,17 @@
 <template>
 
-<HomeComponent/>
+<CheckboxComponent/>
 </template>
 
 <script>
 
-import HomeComponent from './components/HomeComponent.vue';
+import CheckboxComponent from './components/CheckboxComponent.vue';
 
 
 export default {
     name: 'App',
     components: {
-        HomeComponent
+        CheckboxComponent
     }
 }
 </script>
