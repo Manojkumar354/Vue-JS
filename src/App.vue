@@ -1,18 +1,14 @@
 <template>
-
-<CheckboxComponent/>
+<ParentComponent />
 </template>
 
 <script>
-
-import CheckboxComponent from './components/CheckboxComponent.vue';
-
+import ParentComponent from './components/ParentComponent.vue';
 
 export default {
     name: 'App',
     components: {
-        CheckboxComponent
+        ParentComponent
     }
 }
 </script>
-
