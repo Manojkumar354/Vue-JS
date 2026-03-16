@@ -1,14 +1,14 @@
 <template>
-<ParentComponent />
+<ClassBinding />
 </template>
 
 <script>
-import ParentComponent from './components/ParentComponent.vue';
+import ClassBinding from './components/ClassBinding.vue';
 
 export default {
     name: 'App',
     components: {
-        ParentComponent
+        ClassBinding
     }
 }
 </script>
