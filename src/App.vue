@@ -1,14 +1,16 @@
 <template>
-<ClassBinding />
+
+<HomeComponents />
+
 </template>
 
 <script>
-import ClassBinding from './components/ClassBinding.vue';
+import HomeComponents from './components/HomeComponents.vue';
 
 export default {
     name: 'App',
     components: {
-        ClassBinding
+        HomeComponents       
     }
 }
 </script>
