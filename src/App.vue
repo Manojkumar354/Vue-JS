@@ -11,7 +11,27 @@
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" v-model="form.password"><br><br>
 
-    <input type="submit" v-on:click="submitForm" value="Submit">
+    <label for="Country">Country</label>
+    <select name="country" id="country" v-model="form.country">
+        <option value="">Select a country</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+    </select><br><br>
+
+    <h3>Technology</h3>
+    <label for="Java">Java</label>
+    <input type="checkbox" id="Java" name="technology" value="Java" v-model="form.technology">
+    <label for="Python">Python</label>
+    <input type="checkbox" id="Python" name="technology" value="Python" v-model="form.technology">
+    <label for="JavaScript">JavaScript</label>
+    <input type="checkbox" id="JavaScript" name="technology" value="JavaScript" v-model="form.technology"><br><br>
+
+    <h3>Gender</h3>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" v-model="form.gender">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female" v-model="form.gender">
 </form>
 </template>
 
@@ -22,7 +42,10 @@ export default {
         return {
             form: {
                 email: '',
-                password: ''
+                password: '',
+                country: '',
+                technology: [], 
+                gender: ''
             }
         }
     },
